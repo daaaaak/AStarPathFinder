@@ -33,9 +33,22 @@ public class DataStorage : MonoBehaviour
             mapWidth = 2; 
         }
 
-         if(mapHeight < 2)
+        if(mapHeight < 2)
         { 
             mapHeight = 2;
+        }
+    }
+
+    public void Awake()
+    {
+        if (mapWidth % 2 != 0)
+        {
+            mapWidth += 1;
+        }
+
+        if (mapHeight % 2 != 0)
+        {
+            mapHeight += 1;
         }
     }
 

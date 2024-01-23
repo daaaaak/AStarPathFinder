@@ -480,8 +480,8 @@ MonoBehaviour:
   endTile: {fileID: 11400000, guid: aaef9005048eafd4fb30d753b42e3f47, type: 2}
   pathTile: {fileID: 11400000, guid: 64d7d477f846b6446a04e195c1cea0b5, type: 2}
   tileMap: {fileID: 1754514675}
-  mapWidth: 50
-  mapHeight: 50
+  mapWidth: 55
+  mapHeight: 55
 --- !u!4 &2031570909
 Transform:
   m_ObjectHideFlags: 0
