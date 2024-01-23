@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -24,6 +25,19 @@ public class DataStorage : MonoBehaviour
     private bool orientation = false;
 
     private bool mapUpdated = false;
+
+    public void OnValidate()
+    {
+        if(mapWidth < 2)
+        { 
+            mapWidth = 2; 
+        }
+
+         if(mapHeight < 2)
+        { 
+            mapHeight = 2;
+        }
+    }
 
     public Camera GetCamera() 
     {
